@@ -4,6 +4,6 @@ import './pages/index.css';
 import App from './pages/App';
 import * as serviceWorker from './pages/serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 
 serviceWorker.unregister();
