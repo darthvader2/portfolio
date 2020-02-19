@@ -6,6 +6,7 @@ export const HeadingElements = styled.div`
 display :flex;
 align-items:center;
 color:white;
+padding:0;
 
 `;
 
@@ -25,10 +26,14 @@ export const HeadingWrapCont = styled.div`
 
 export const HeadingMain=styled.div`
 font-weight: 900;
-font-size: 7vw;
+font-size: 5vw;
 line-height: 129.69%;
 letter-spacing: 0.03em;
 margin-bottom: 0px;
-margin-left: 0px;
+margin-top: 0px;
 color:white;
+padding-left:50px;
+>span {
+    color:#CE2020;
+}
 `;

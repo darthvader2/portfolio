@@ -8,16 +8,19 @@ import {HeadingWrapCont,Line} from './styles';
 function HeadingWrap(){
     return(
         <Container>
-        <HeadingWrapCont>
-        <HeadingElements>
-            
-        
-        </HeadingElements>        
-       <HeadingMain>
-           Hi there ,I'm Varshith
-       </HeadingMain>
-    </HeadingWrapCont>
-    </Container>
+            <HeadingWrapCont>
+                <HeadingElements>
+                </HeadingElements>
+                        
+                <HeadingMain>
+                <Line></Line>
+                Hi There ,I'm Varshith. <br/>
+                Software <span>Engineer</span>,<br/>
+                Free lancer and Data Enthusiast
+
+                </HeadingMain>
+            </HeadingWrapCont>
+        </Container>
     
         )
 }

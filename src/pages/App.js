@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import HeadingWrap from '../components/headingwrap';
 import Layout from '../components/Layout'
 import { HeadingMain } from '../components/headingwrap/styles';
+import Logo from '../components/Logo';
 const Container = styled.div`
 width: 100%;
 height: 100vh;
@@ -15,6 +16,7 @@ background:black;
 function App() {
   return (
     <Layout>
+      <Logo/>
       <HeadingWrap></HeadingWrap>
     </Layout>
     );
