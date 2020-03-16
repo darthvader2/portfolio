@@ -18,7 +18,8 @@ const Layout = styled.div`
     padding:0;
     margin :auto;
     background-color:black;
-    overflow-y:hidden;
+    overflow-x:hidden;
+
 
   
   

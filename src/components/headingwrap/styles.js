@@ -2,13 +2,7 @@ import styled from 'styled-components';
 import git from '../../images/social-icons/git.png';
 import twitter from '../../images/social-icons/twitter.png';
 import linkedin from '../../images/social-icons/linkedin.png';
-export const breakpoints = {
-    mobileMin: "480px",
-    mobileMax: "959px",
-    tabletMin: "960px",
-    tabletMax: "1199px",
-    desktopMin: "1200px"
-  };
+
 
 export const HeadingElements = styled.div`
 display :flex;
@@ -20,14 +14,16 @@ padding:0;
 
 export const Line = styled.div`
 height:2px;
-width:300px;
+width:200px;
 background-color:#CE2020;
 margin-left:5%
 `;
 export const HeadingWrapCont = styled.div`
-    background: black;
-    padding-top: 40px;
-    height :100vh;
+    width: 100%;
+    margin :auto;
+    flex-wrap:wrap;
+    padding-top:100px;
+    height :auto;
     background-position: 0 0;
     background-repeat: no-repeat;
 `;
@@ -44,11 +40,7 @@ color:white;
 margin-left:5%;
 posiotion:absolute;
 
-@media (min-width: ${breakpoints.mobileMax}) {
-    font-size: 60px;
-    margin-bottom: 0;
-    margin-left: 50px;
-}
+
 >span {
     color:#CE2020;
 }
