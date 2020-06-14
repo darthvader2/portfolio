@@ -24,13 +24,7 @@ function HeadingWrap(){
                 </SocialCont>
                 </HeadingElements>
                         
-                <HeadingMain>
                 
-                Hi There ,I'm Varshith. <br/>
-                Software <span>Engineer</span>,<br/>
-                Free lancer and Data Enthusiast.
-
-                </HeadingMain>
             </HeadingWrapCont>
         </Container>
     
