@@ -1,15 +1,18 @@
 import React from 'react';
 import './App.css';
 import HeadingWrap from '../components/headingwrap';
-import Logo from '../components/headingwrap/Logo';
 import { ThemeProvider } from "styled-components";
 import DarkMode from '../components/theme/themes';
 import BodyTheme from '../components/global-components/modes'
+import GlobalFonts from '../fonts/fonts'
+
 function App() {
   return (
     <ThemeProvider theme = {DarkMode}>
+      <GlobalFonts/>
     <BodyTheme/>
-        <Logo/>
+        
+        
       <HeadingWrap></HeadingWrap>
     
   

@@ -1,5 +1,5 @@
 const DarkMode = {
-    backgroundColor: "black",
+    backgroundColor: "#070707",
 };
 
 export default DarkMode
