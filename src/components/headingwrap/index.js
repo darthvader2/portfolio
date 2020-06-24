@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container} from '../container/container'
 import {HeadingElements,HeadingMain } from './styles';
-import {HeadingWrapCont,Line,SocialCont,Social,CodeSection} from './styles';
+import {HeadingWrapCont,SocialCont,Social,CodeSection} from './styles';
 
 
 function HeadingWrap(){

@@ -10,6 +10,9 @@ display:flex;
 flex-wrap:wrap;
 height :auto;
 margin-top:30vh;
+@media(max-width:800px){
+    margin-top:20vh;
+}
 `;
 
 export const HeadingMain=styled.div`
@@ -21,15 +24,21 @@ posiotion:absolute;
 color:#5A2DF2;
 margin-left:5%;
 margin-top:2%;
+
+@media(max-width:800px){
+    font-size:5em;
+    margin-top:0;
+}
 `;
 
 export const CodeSection=styled.div`
     height:320px;
     width:320px;
-    margin-left:10%;
     background-repeat:no-repeat;
     background-size:320px 320px;
     background-image:url(${codesectionimage});
+    margin-left:10%;
+    
     `;
 
 export const HeadingElements = styled.div`
@@ -63,6 +72,7 @@ export const Social = styled.div`
     width: 30px;
     height: 30px;
     margin: 0 60px;
+    position:relative;
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: center center;
