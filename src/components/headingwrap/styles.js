@@ -6,9 +6,9 @@ import codesectionimage from '/home/varshi/portfolio/src/images/codesection_comp
 
 export const HeadingWrapCont = styled.div`
 width: auto;
-display:flex;
+display:inline-flex;
 flex-wrap:wrap;
-height :auto;
+height :50vh;
 margin-top:30vh;
 @media(max-width:800px){
     margin-top:20vh;
