@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import HeadingWrap from '../components/headingwrap';
+import AboutWrap from '../components/aboutwrap/index';
 import { ThemeProvider } from "styled-components";
 import DarkMode from '../components/theme/themes';
 import BodyTheme from '../components/global-components/modes'
@@ -13,8 +14,8 @@ function App() {
     <BodyTheme/>
         
         
-      <HeadingWrap></HeadingWrap>
-    
+    <HeadingWrap/>
+    <AboutWrap/>   
   
     </ThemeProvider>
     );
