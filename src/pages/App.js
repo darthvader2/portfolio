@@ -1,16 +1,22 @@
 import React from 'react';
 import './App.css';
 import HeadingWrap from '../components/headingwrap';
-import Layout from '../components/Layout'
-import Logo from '../components/Logo';
+import { ThemeProvider } from "styled-components";
+import DarkMode from '../components/theme/themes';
+import BodyTheme from '../components/global-components/modes'
 
-     
+
 function App() {
   return (
-    <Layout>
-      <Logo/>
+    <ThemeProvider theme = {DarkMode}>
+      
+    <BodyTheme/>
+        
+        
       <HeadingWrap></HeadingWrap>
-    </Layout>
+    
+  
+    </ThemeProvider>
     );
 }
 
