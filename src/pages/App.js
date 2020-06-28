@@ -5,7 +5,7 @@ import AboutWrap from '../components/aboutwrap'
 import { ThemeProvider } from "styled-components";
 import DarkMode from '../components/theme/themes';
 import BodyTheme from '../components/global-components/modes'
-
+import GithubWrap from '../components/githubwrap'
 
 function App() {
   return (

@@ -17,3 +17,12 @@ export const MonumentExtendedRegular = css`
     
   }
 `;
+
+export const NeueMachinaUltrabold=css`
+    @font-face{
+    font-family : 'Neue Machina',
+      src :   
+        local('Neue Machina'),
+        url('./NeueMachina-Regular.otf') format('otf'),
+      `;
+
