@@ -6,8 +6,9 @@ export const NeueMachinaUltrabold=css`
     font-family : 'Neue Machina Ultrabold',
       src :   
         local('Neue Machina Ultrabold'),
-        url('./NeueMachinaUltrabold.otf') format('otf'),
-      `;
+        url('./NeueMachinaUltrabold.otf') format('otf');
+      
+      }  `;
       
 export const MonumentExtendedRegular = css`
   @font-face {
@@ -18,11 +19,11 @@ export const MonumentExtendedRegular = css`
   }
 `;
 
-export const NeueMachinaUltrabold=css`
-    @font-face{
-    font-family : 'Neue Machina',
-      src :   
-        local('Neue Machina'),
-        url('./NeueMachina-Regular.otf') format('otf'),
-      `;
 
+      export const OverpassMono=css`
+      @font-face{
+      font-family : 'Overpass Mono',
+        src :   
+          local('Overpass Mono'),
+          url('./OverpassMono-Light.ttf') format('ttf'),
+        `;

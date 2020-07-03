@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import git from '../../images/social-icons/git.png';
 import twitter from '../../images/social-icons/twitter.png';
 import linkedin from '../../images/social-icons/linkedin.png';
-import codesectionimage from '/home/varshi/portfolio/src/images/codesection_component.png';
+import codesectionimage from '../../images/codesection_component.png';
 
 export const HeadingWrapCont = styled.div`
 width: auto;

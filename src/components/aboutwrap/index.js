@@ -15,10 +15,11 @@ function AboutWrap(){
             </span>
             </AboutHeading>
         <AboutContent>
-        The passage experienced a surge in popularity during  the 1960s <br/>
-        when Letraset used it on their  dry-transfer  sheets,<br/>
-         and  again during th  90s as   desktop publishers bundled <br/>
-         the text  with their software. vvvToday it's  seen all around the web; 
+        The passage experienced a surge in popularity during <br/> 
+        the 1960s when Letraset used it on their  dry-transfer <br/> 
+        sheets,and  again during th  90s as   desktop publishers<br/>
+        bundled the text  with their software. vvvToday it's  seen<br/> 
+        all around the web; 
 
         </AboutContent>
 
