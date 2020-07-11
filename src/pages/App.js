@@ -5,7 +5,8 @@ import AboutWrap from '../components/aboutwrap'
 import { ThemeProvider } from "styled-components";
 import DarkMode from '../components/theme/themes';
 import BodyTheme from '../components/global-components/modes'
-import GithubWrap from '../components/githubwrap'
+import PGWrap from '../components/playgroundwrap'
+
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         
       <HeadingWrap/>
       <AboutWrap/>
-  
+      <PGWrap/>
     </ThemeProvider>
     );
 }
