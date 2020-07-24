@@ -9,8 +9,7 @@ function HeadingWrap(){
         <Container>
             <HeadingWrapCont>
                 <HeadingMain>Varshith.</HeadingMain>
-                <CodeSection/>
-             
+                             
                 <HeadingElements>
                  
 

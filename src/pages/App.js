@@ -17,7 +17,7 @@ function App() {
         
       <HeadingWrap/>
       <AboutWrap/>
-      <PGWrap/>
+      
     </ThemeProvider>
     );
 }

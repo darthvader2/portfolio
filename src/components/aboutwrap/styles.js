@@ -10,8 +10,9 @@ margin-left:5%;
 
 export const AboutHeading=styled.div`
 
-font-family: Neue Machina Ultrabold;
+font-family: 'Monument Extended',monospace;
 font-size:2.5em;
+font-weight:600;
 line-height:1.2em;
 color:white;
 > span{
@@ -21,10 +22,14 @@ color:white;
 `;
 
 export const AboutContent=styled.div`
-margin-top : 3.5em;
-font-family:'Overpass Mono', monospace;
+display:flex;
+flex-wrap:wrap;
+padding-top:3rem;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+opacity:0.7;
 font-size:1.8em;
+font-weight:400;
 line-height:1.8em;
-spacing:0.030em;
+letter-spacing:0.030em;
 color:white;
 `;

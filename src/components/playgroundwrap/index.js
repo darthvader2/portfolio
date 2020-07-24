@@ -7,10 +7,10 @@ function PGWrap(){
         
         <PGCont>
             <Title>
-                Playground
+                Writings
             </Title>
              <Cards>
-                 <Card/>
+                 <Card>Python</Card>
                 <Card/>
                 <Card/>
                 

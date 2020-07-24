@@ -29,11 +29,11 @@ flex-wrap:wrap;
 `;
 
 export const Card=styled.div`
-height:6rem;
-width:250px;
-background:#2e2b27;
+height:18rem;
+width:12rem;
+border-radius:12px;
+background:#1b1d20;
 margin:1.5rem;
-border-radius:16px;
 padding:2rem;
 box-shadow:10px 0 20px
 
