@@ -23,7 +23,7 @@ animation:fadeIn 2s ease-in ;
 `;
 
 export const HeadingMain=styled.div`
-font-family: Neue Machina Ultrabold;
+font-family: 'Neue Machina Ultrabold';
 font-size: 8vw;
 line-height: 129.69%;
 letter-spacing: 0.03em;
