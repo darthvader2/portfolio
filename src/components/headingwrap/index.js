@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container} from '../container/container'
 import {HeadingElements,HeadingMain } from './styles';
-import {HeadingWrapCont,SocialCont,Social,CodeSection} from './styles';
+import {HeadingWrapCont,SocialCont,Social,HeadingIntro} from './styles';
 
 
 function HeadingWrap(){
@@ -9,6 +9,14 @@ function HeadingWrap(){
         <Container>
             <HeadingWrapCont>
                 <HeadingMain>Varshith.</HeadingMain>
+
+                
+        <HeadingIntro>
+            Student, Web - developer <br/>
+            and data <span> analyst <br/>     
+            based in linköping. </span>
+            </HeadingIntro>
+        
                              
                 <HeadingElements>
                  

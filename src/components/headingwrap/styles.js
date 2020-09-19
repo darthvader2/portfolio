@@ -7,7 +7,7 @@ import codesectionimage from '../../images/codesection_component.png';
 export const HeadingWrapCont = styled.div`
 place-items :center;
 display:grid;
-margin-top:12rem;
+margin-top:6rem;
 animation:fadeIn 2s ease-in ;
 @keyframes fadeIn{
     from{
@@ -29,7 +29,7 @@ line-height: 129.69%;
 letter-spacing: 0.03em;
 color:#5A2DF2;
 text-align:center;
-padding:50px;
+padding:30px;
 
 
 @media(max-width:800px){
@@ -48,6 +48,18 @@ padding:50px;
 `;
 
 
+export const HeadingIntro=styled.div`
+
+font-family: 'Monument Extended',monospace;
+font-size:2.5em;
+font-weight:600;
+line-height:1.2em;
+color:white;
+> span{
+    color:#5A2DF2;
+}
+
+`;
 
 export const HeadingElements = styled.div`
     height:auto;
