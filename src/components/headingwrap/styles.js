@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import git from '../../images/social-icons/git.png';
 import twitter from '../../images/social-icons/twitter.png';
 import linkedin from '../../images/social-icons/linkedin.png';
-import codesectionimage from '../../images/codesection_component.png';
+import Header_icon from '../../images/Header_icon.png'
 
 export const HeadingWrapCont = styled.div`
 place-items :center;
@@ -50,11 +50,9 @@ padding:30px;
 
 export const HeadingIntro=styled.div`
 
-font-family: 'Monument Extended',monospace;
-font-size:2.5em;
-font-weight:600;
-line-height:1.2em;
-color:white;
+background-image  : url($Header_icon);
+height : 300px;
+width : 300px;
 > span{
     color:#5A2DF2;
 }
