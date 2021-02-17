@@ -12,9 +12,8 @@ function HeadingWrap(){
 
                 
         <HeadingIntro>
-            Student, Web - developer <br/>
-            and data <span> analyst <br/>     
-            based in linköping. </span>
+            Student, Web - developer  and data  analyst <br/>     
+            based in linköping.
             </HeadingIntro>
         
                              

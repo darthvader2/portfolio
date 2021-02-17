@@ -8,32 +8,19 @@ export const HeadingWrapCont = styled.div`
 place-items :center;
 display:grid;
 margin-top:6rem;
-animation:fadeIn 2s ease-in ;
-@keyframes fadeIn{
-    from{
-        opacity:0;
-            }
-    to{
-        opacity:1;
-    }
-}
-
-
-
 `;
 
 export const HeadingMain=styled.div`
-font-family: 'Neue Machina Ultrabold';
+font-family : 'Space Mono', monospace;
 font-size: 8vw;
 line-height: 129.69%;
 letter-spacing: 0.03em;
 color:#5A2DF2;
-text-align:center;
-padding:30px;
+font-weight:700;
 
 
 @media(max-width:800px){
-    font-size:4em;
+    font-size:2.4em;
 }
 @keyframes fadeIn{
     from{
@@ -49,15 +36,17 @@ padding:30px;
 
 
 export const HeadingIntro=styled.div`
-
-background-image  : url($Header_icon);
-height : 300px;
-width : 300px;
-> span{
-    color:#5A2DF2;
+    
+    font-family : 'Space Mono', monospace;
+    color:white;
+    font-size:1.5em;
+    
+    @media(max-width:800px){
+    font-size:.9em;
 }
 
 `;
+
 
 export const HeadingElements = styled.div`
     height:auto;

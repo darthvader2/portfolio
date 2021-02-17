@@ -1,10 +1,10 @@
 import styled from 'styled-components/macro'
 
 export const Container = styled.div`
-    width: 100%;
-    height:72vh;
-    margin :auto;
+    display:grid;
     flex-wrap:wrap;
+    align-items:center;
+    height:100vh;
     
 `;
 export const FullWidthContainer = styled.div``;
