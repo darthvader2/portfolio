@@ -19,7 +19,7 @@ font-weight:700;
 
 
 @media(max-width:800px){
-    font-size:2.4em;
+    font-size:3.5em;
 }
 @keyframes fadeIn{
     from{
@@ -42,7 +42,7 @@ export const HeadingIntro=styled.div`
     padding:2em;
     
     @media(max-width:800px){
-    font-size:.8em;
+    font-size:.9em;
 }
 
 `;
@@ -54,29 +54,21 @@ export const HeadingElements = styled.div`
     align-items:center;
     color:white;
     font-family: 'Space Mono', monospace;
-    > span{
-        color:#5A2DF2;
-        padding:5px;
-    }
+    
     `;
 
 export const SocialCont = styled.div`
     width: auto;
     height: auto;
     display: flex;
-    
-    
-    & .git{
-        background-image : url(${git})
-    } 
-
-    & .twitter{
-        background-image:url(${twitter})
+    > a{
+        text-decoration:none;
+        padding:5px;
     }
-
-    & .linkedin{
-        background-image:url(${linkedin})
+    > span{
+        padding:5px;
     }
+    
     `;
 
 
