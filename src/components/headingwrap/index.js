@@ -20,7 +20,7 @@ function HeadingWrap(){
                 <HeadingElements>
                  
 
-                <SocialCont>
+                {/* <SocialCont>
                     <a href = "https://github.com/darthvader2"> 
                         <Social className = 'git'></Social> 
                     </a>
@@ -31,7 +31,8 @@ function HeadingWrap(){
                     <a href="https://www.linkedin.com/in/konda-varshith-5388a2116/">
                         <Social className = 'linkedin'></Social>
                     </a>
-                </SocialCont> 
+                </SocialCont>  */}
+                Github <span> /  </span>  Twitter  <span> / </span>  linkedin
                 </HeadingElements>                         
                  
             </HeadingWrapCont>

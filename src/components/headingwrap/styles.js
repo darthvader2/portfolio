@@ -7,7 +7,6 @@ import Header_icon from '../../images/Header_icon.png'
 export const HeadingWrapCont = styled.div`
 place-items :center;
 display:grid;
-margin-top:6rem;
 `;
 
 export const HeadingMain=styled.div`
@@ -40,9 +39,10 @@ export const HeadingIntro=styled.div`
     font-family : 'Space Mono', monospace;
     color:white;
     font-size:1.5em;
+    padding:2em;
     
     @media(max-width:800px){
-    font-size:.9em;
+    font-size:.8em;
 }
 
 `;
@@ -52,7 +52,12 @@ export const HeadingElements = styled.div`
     height:auto;
     display :flex;
     align-items:center;
-    padding:6%;
+    color:white;
+    font-family: 'Space Mono', monospace;
+    > span{
+        color:#5A2DF2;
+        padding:5px;
+    }
     `;
 
 export const SocialCont = styled.div`
