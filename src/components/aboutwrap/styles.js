@@ -1,16 +1,31 @@
 import styled from 'styled-components';
 
 export const AboutWrapCont=styled.div`
-display : grid;
-position:relative;
-place-items:flex-start;
-margin-top:4rem;
-padding:5%;
+display : flex;
+height:100vh;
+width:100vw;
+justify-content:center;
 `;
 
-export const AboutHeading=styled.div`
+export const AboutContent=styled.div`
+width:65vw;
+margin:auto;
+justify-content:center;
+display:flex;
+flex-wrap:wrap;
+`;
 
-font-family: 'Neue Machina Ultrabold';
+
+
+export const AboutHeading=styled.div`
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:.5rem 1rem;
+color:#5A2DF2;
+
+font-family : 'Space Mono', monospace;
 font-size:2.5em;
 font-weight:600;
 line-height:1.2em;
@@ -21,18 +36,18 @@ color:#5A2DF2;
 > span{
     color:#5A2DF2;
 }
-
+ 
 `;
 
-export const AboutContent=styled.div`
+export const AboutText=styled.div`
+flex:2;
 display:flex;
-flex-wrap:wrap;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-opacity:0.7;
-font-size:1.3em;
+flex-direction:column;
+justify-content:center;
+padding:.5rem 1rem;
+color:#5A2DF2;
+margin:0;
 font-weight:400;
-line-height:1.8em;
-letter-spacing:0.030em;
+line-height:30px;
 color:white;
-padding-top:5rem;
 `;

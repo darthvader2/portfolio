@@ -17,6 +17,7 @@ function App() {
         
         
       <HeadingWrap/>
+      <AboutWrap/>
       
       
     </ThemeProvider>
