@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components";
 import DarkMode from '../components/theme/themes';
 import BodyTheme from '../components/global-components/modes'
 import CodeWrap from '../components/code-wrap'
-
+import Footer from '../components/footer'
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <HeadingWrap/>
       <AboutWrap/>
       
-      
+      <Footer/>
     </ThemeProvider>
     );
 }
