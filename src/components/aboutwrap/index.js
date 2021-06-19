@@ -1,8 +1,6 @@
 import React from 'react';
-import {Container} from '../container/container';
 import {AboutWrapCont,AboutText,AboutHeading,AboutContent,GifDiv} from './styles';
-import cv from '../../documents/Varshith_CV.pdf'
-import gif from '../../images/cat.gif';
+
 
 function AboutWrap(){    
     return(
