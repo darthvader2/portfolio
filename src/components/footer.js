@@ -5,7 +5,7 @@ import React from 'react';
 const Foot = styled.div`
 width: 100%;
 height: 12rem;
-background-color: #262626;
+background-color: black;
 margin-top:auto;
 display: flex;
 align-items: center;
@@ -22,11 +22,15 @@ font-weight:700;
 
 `;
 
+const Footnote=styled.div`
+color: white;
+`;
 
 function Footer() {
     return(
         <Foot>
             <FooterMain>Varshith.</FooterMain>
+            <Footnote>Made with Coffee</Footnote>
             </Foot>
     )
 };

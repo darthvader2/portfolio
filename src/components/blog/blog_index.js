@@ -14,7 +14,6 @@ font-family : 'Space Mono', monospace;
 font-size:2.5em;
 font-weight:600;
 line-height:1.2em;
-color:white;
 color:#5A2DF2;
 
 
@@ -30,6 +29,7 @@ display: grid;
 height: auto;
 width: auto;
 padding: 50px;
+background-color:#1f1f1f;
 `
 ;
 
