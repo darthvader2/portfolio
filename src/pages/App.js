@@ -1,5 +1,4 @@
 import   React from 'react';
-import './App.css';
 import HeadingWrap from '../styles/Headingwrap.js';
 import AboutWrap from '../styles/Aboutwrap.js'
 import { ThemeProvider } from "styled-components";
