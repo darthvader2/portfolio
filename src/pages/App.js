@@ -1,13 +1,12 @@
 import   React from 'react';
 import './App.css';
-import HeadingWrap from '../components/headingwrap';
-import AboutWrap from '../components/aboutwrap'
+import HeadingWrap from '../styles/Headingwrap.js';
+import AboutWrap from '../styles/Aboutwrap.js'
 import { ThemeProvider } from "styled-components";
 import DarkMode from '../components/theme/themes';
 import BodyTheme from '../components/global-components/modes'
-import CodeWrap from '../components/code-wrap'
-import Footer from '../components/footer'
-import BlogWrap from '../components/blog/blog_index';
+import Footer from '../styles/footer'
+import BlogWrap from '../styles/Blogwrap';
 
 
 function App() {
