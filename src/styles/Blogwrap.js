@@ -45,7 +45,7 @@ function BlogWrap(){
     return(
             <BlogWrapper>
 
-            <Heading>Writings</Heading>
+            <Heading>Snippets</Heading>
             <Wrapper>
                 <CardComponent/>
             </Wrapper>

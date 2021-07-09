@@ -13,6 +13,7 @@ transition : transform 200ms ease-in ;
 border-radius: 5px;
 width: 20rem;
 font-family : 'Space Mono', monospace;
+
 :hover{
 
  transform : rotateX(120);
@@ -27,6 +28,9 @@ font-size: 1.5rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 padding:1rem;
+>a{
+    text-decoration: none;
+}
 `;
 const CardDesc=styled.div`
 color:white;
@@ -41,8 +45,9 @@ function CardComponent(){
 return(
 <Card>
     
-        <CardTitle><h2>Coming soon!</h2></CardTitle>
-            <CardDesc>Intro</CardDesc>
+        <CardTitle><a href = "/quotes"><h2>Quotes</h2></a></CardTitle>
+            <CardDesc>Random quote generator</CardDesc>
+            
         
 
 </Card>
