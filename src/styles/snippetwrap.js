@@ -1,36 +1,34 @@
 import React from 'react';
 import styled  from 'styled-components';
-import CardComponent from './Blogcard';
+import CardComponent from './snippetcard';
+import { SectionContainer } from './SectionStyles';
+
 const Heading=styled.div`
 flex:1;
 display:flex;
 flex-direction:column;
 justify-content:center;
-padding:.5rem 1rem;
-color:#5A2DF2;
+color:rgb(184, 122, 255);
 
 font-family : 'Space Mono', monospace;
-font-size:2.5em;
+font-size:4rem;
 font-weight:600;
 line-height:1.2em;
-color:#5A2DF2;
+color:rgb(184, 122, 255);
 
 
 > span{
     color:"red";
 }
+
+@media(max-width:800px){
+    font-size:2rem;
+}
+
  
 `;
 
 
-const BlogWrapper = styled.div`
-display: grid;
-height: auto;
-width: auto;
-padding: 50px;
-background-color:#1f1f1f;
-`
-;
 
 const Wrapper = styled.div`
 display: grid;
@@ -41,16 +39,16 @@ gap:5rem;
 justify-content: center;
 `;
 
-function BlogWrap(){
+function SnippetWrap(){
     return(
-            <BlogWrapper>
+            <SectionContainer>
 
             <Heading>Snippets</Heading>
             <Wrapper>
                 <CardComponent/>
             </Wrapper>
-            </BlogWrapper>
+            </SectionContainer>
     )
 }
 
-export default BlogWrap;
+export default SnippetWrap;

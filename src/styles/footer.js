@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
-
+import Logo from './logo';
 
 const Foot = styled.div`
 width: 100%;

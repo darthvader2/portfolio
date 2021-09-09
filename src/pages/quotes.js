@@ -5,6 +5,7 @@ import DarkMode from '../components/theme/themes';
 import BodyTheme from '../components/global-components/modes';
 import { ThemeProvider } from "styled-components";
 import {Container} from '../components/container';
+import Logo from '../styles/logo';
 
 const Quoteswrapper = styled.div`
 display: grid;
@@ -32,7 +33,9 @@ class Quotes extends React.Component{
         return(
             <ThemeProvider theme = {DarkMode}>
                 <BodyTheme/>
-              <Container>  
+                
+              <Container>
+              <Logo/>  
             <Quoteswrapper><h1>Quote</h1>
             {this.state.quote?(
             <h1>{this.state.quote}</h1>
