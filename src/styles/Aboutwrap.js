@@ -14,8 +14,11 @@ font-family : 'Space Mono', monospace;
 font-size:1.7em;
 
 @media(max-width:800px){
-    font-size:1em;
-    max-width: 25em;
+    font-size:1.5rem;
+    max-width: 17em;
+    line-height: 1.6em;
+    margin: 0 auto;
+
 }
 
 

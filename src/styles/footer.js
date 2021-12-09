@@ -10,6 +10,7 @@ margin-top:auto;
 display: flex;
 align-items: center;
 justify-content:space-evenly;
+padding: 2rem;
 `;
 
 
