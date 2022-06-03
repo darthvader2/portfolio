@@ -2,35 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Card=styled.div`
-background-color:white;
-overflow: hidden;
-box-shadow: 0 2px 5px;
-display: flex;
-flex-direction:column;
-justify-content: space-between;
-cursor: pointer;
-transition : transform 200ms ease-in ;
-border-radius: 5px;
-width: 20rem;
-font-family : 'Space Mono', monospace;
-
-:hover{
-
- transform : rotateX(120);
- 
- 
-}
-
-`;
-const CardTitle=styled.div`
-font-size: 1.5rem;
-  background: -webkit-linear-gradient(#4158D0, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+box-sizing:border-box;
+width:370px;
+height:190px;
+border-color:white;
+border-style:solid;
+border-width:1px;
+border-radius:15px;
 padding:1rem;
->a{
-    text-decoration: none;
-}
+margin:15px;
+`;
+const CardTitle=styled.a`
+font-size: 1.5rem;
+color:white;
+font-family : 'Space Mono', monospace;
 `;
 const CardDesc=styled.div`
 color:white;
@@ -45,8 +30,8 @@ function CardComponent(){
 return(
 <Card>
     
-        <a href = "/quotes"><h2>Quotes</h2></a>
-            <CardDesc>Random quote generator</CardDesc>
+        <CardTitle>Cross entropy and emperical risk using KKNN</CardTitle>
+    
             
         
 

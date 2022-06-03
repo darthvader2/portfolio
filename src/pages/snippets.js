@@ -34,12 +34,14 @@ color:rgb(184, 122, 255);
 `;
 
 const SnippethomeWrap=styled.div`
-width:100%;
-padding-right:1.5rem;
-padding-left:1.5rem;
+max-width: 1260px;
+padding : 5%;
+margin-top:5%;                                                                         
 margin-right:auto;
 margin-left:auto;
-background-color:red;
+background-color:#000000;
+display:flex;
+flex-wrap:wrap;
 `
 
 function Snippethome(){
@@ -55,9 +57,8 @@ return(
     <CardComponent/>
     <CardComponent/>
     <CardComponent/>
-    <CardComponent/>
-    <CardComponent/>
-    <CardComponent/><CardComponent/>
+
+    
     
 
 
