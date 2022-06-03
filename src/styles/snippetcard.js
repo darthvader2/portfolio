@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Card=styled.div`
-background-color:black;
+background-color:white;
 overflow: hidden;
 box-shadow: 0 2px 5px;
 display: flex;
@@ -45,7 +45,7 @@ function CardComponent(){
 return(
 <Card>
     
-        <CardTitle><a href = "/quotes"><h2>Quotes</h2></a></CardTitle>
+        <a href = "/quotes"><h2>Quotes</h2></a>
             <CardDesc>Random quote generator</CardDesc>
             
         

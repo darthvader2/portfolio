@@ -29,7 +29,7 @@ function BlogWrap(){
     return(
             <SectionContainer>
 
-            <Heading>Writings</Heading>
+            <Heading>Works & Writings</Heading>
             <Wrapper>
             <BlogCard title = "!!! Current production is not optimized"/>
            </Wrapper>

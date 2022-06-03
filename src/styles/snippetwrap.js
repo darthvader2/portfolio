@@ -45,7 +45,8 @@ function SnippetWrap(){
 
             <Heading>Snippets</Heading>
             <Wrapper>
-                <CardComponent/>
+        <a href = "/snippets">Snippets</a>
+        
             </Wrapper>
             </SectionContainer>
     )
