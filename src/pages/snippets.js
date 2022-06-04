@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
 import Logo from "../styles/logo";
@@ -53,9 +52,6 @@ return(
 <Heading>Snippets</Heading>
 <SnippethomeWrap>
 
-    <CardComponent/>
-    <CardComponent/>
-    <CardComponent/>
     <CardComponent/>
 
     

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled  from 'styled-components';
-import CardComponent from './snippetcard';
 import { SectionContainer } from './SectionStyles';
 
 const Heading=styled.div`

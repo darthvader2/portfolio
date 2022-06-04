@@ -17,11 +17,7 @@ font-size: 1.5rem;
 color:white;
 font-family : 'Space Mono', monospace;
 `;
-const CardDesc=styled.div`
-color:white;
-padding: 0 .6rem;
-margin: 1rem;
-`;
+
 
 
 

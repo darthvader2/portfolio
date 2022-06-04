@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
 const LogoTitle = styled.h2`
 
 color:#5A2DF2;
