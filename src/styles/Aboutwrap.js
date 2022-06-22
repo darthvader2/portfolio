@@ -4,23 +4,12 @@ import { SectionContainer } from './SectionStyles';
 
 
 export const AboutText=styled.div`
-max-width: 35em;
 color:#5A2DF2;
-margin:0;
 font-weight:400;
-line-height:55px;
+line-height:45px;
 color:#e2dada;
 font-family : 'Space Mono', monospace;
-font-size:1.7em;
-
-@media(max-width:800px){
-    font-size:1.4rem;
-    max-width: 17em;
-    line-height: 1.6em;
-    margin: 0;
-
-
-}
+font-size:1.4em;
 
 
 
