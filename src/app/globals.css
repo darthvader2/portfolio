@@ -2,13 +2,15 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  -webkit-text-size-adjust: 100%;
+
+  
 }
 
 body {
   margin: 0;
-  height: 100%;
-  background-color: #23253f;
+  padding: 0;
+  height: 90;
+  background-color: #040404;
   color: #e1e1e1;
   max-width: 50rem;
   margin-right: auto;
@@ -52,4 +54,23 @@ a {
   margin: 0 auto 2rem;
   width: 100%;
   display: block;
+}
+
+.header h1{
+  color: rgb(90, 45, 242);
+}
+
+nav a{
+  padding: 5px; 
+}
+
+.socialdiv{
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 10px;
+}
+.social{
+  padding: 5px;
+  height: 10px;
+  font-size: 18px;
 }
