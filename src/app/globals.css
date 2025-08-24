@@ -8,7 +8,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  background-color: #23253f;
+  background-color: #040404;
   color: #e1e1e1;
   max-width: 50rem;
   margin-right: auto;
@@ -52,4 +52,12 @@ a {
   margin: 0 auto 2rem;
   width: 100%;
   display: block;
+}
+
+.header h1{
+  color: rgb(90, 45, 242);
+}
+
+nav a{
+  padding: 5px; 
 }
