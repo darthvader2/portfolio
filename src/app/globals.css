@@ -74,3 +74,17 @@ nav a{
   height: 10px;
   font-size: 18px;
 }
+@keyframes fadeInSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animated-title {
+  animation: fadeInSlideDown 1.5s ease;
+}

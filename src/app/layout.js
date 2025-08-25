@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <body>
         <div class="content">
         <header class="header">
-        <h1>Varshith konda</h1> 
+        <h1 className="animated-title" >Varshith konda</h1> 
         <nav> 
           <Link href='/'>Home</Link>
           <Link href='/blog'>Blog</Link>
