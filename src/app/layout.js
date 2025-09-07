@@ -12,20 +12,16 @@ export default function RootLayout({ children }) {
       <body>
         <div class="content">
         <header class="header">
-        <h1>Varshith konda</h1> 
+        <h1 className="animated-title" >Varshith konda</h1> 
         <nav> 
           <Link href='/'>Home</Link>
-          <Link href='/blog'>Blog</Link>
         
         
         </nav>
         </header>
         {children}
-        </div>
-        <div class = "socialdiv">
-         <div class="social" ><a href = "https://github.com/darthvader2">Github</a></div>
-         <div class="social"><a href = "https://www.linkedin.com/in/konda-varshith/">LinkedIn</a></div>
-        </div>
+	</div>
+
         </body>
     
     </html>

@@ -63,14 +63,50 @@ a {
 nav a{
   padding: 5px; 
 }
-
-.socialdiv{
-  display: flex;
+.socback{
+  height:40px;
+  width:20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  margin-left: 10px;
+  background:rgb(101, 27, 184);
+}
+.socialglass{
+ display: flex;
+ position: fixed;
   flex-wrap: wrap;
-  max-height: 10px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.08); /* translucent white */
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15); /* subtle border */
+  backdrop-filter: blur(12px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6); /* soft dark shadow */
+  padding: 20px;
+  color: #fff; 
+  z-index: 10;
+}
+.socialdiv{ 
+  display: flex;
+  
 }
 .social{
   padding: 5px;
-  height: 10px;
+  height: 25px;
   font-size: 18px;
 }
+@keyframes fadeInSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animated-title {
+  animation: fadeInSlideDown 1.5s ease;
+}
+
