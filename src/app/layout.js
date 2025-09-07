@@ -21,11 +21,8 @@ export default function RootLayout({ children }) {
         </nav>
         </header>
         {children}
-        </div>
-        <div class = "socialdiv">
-         <div class="social" ><a href = "https://github.com/darthvader2">Github</a></div>
-         <div class="social"><a href = "https://www.linkedin.com/in/konda-varshith/">LinkedIn</a></div>
-        </div>
+	</div>
+
         </body>
     
     </html>
