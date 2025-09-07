@@ -15,7 +15,6 @@ export default function RootLayout({ children }) {
         <h1 className="animated-title" >Varshith konda</h1> 
         <nav> 
           <Link href='/'>Home</Link>
-          <Link href='/blog'>Blog</Link>
         
         
         </nav>
