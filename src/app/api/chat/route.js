@@ -229,8 +229,8 @@ export async function POST(request) {
       return NextResponse.json({ error: "Prompt is required." }, { status: 400 });
     }
 
-    const apiKey = process.env.OPENAI_API_KEY || process.env.OPENAI_KEY;
-    const openAiApiUrl = process.env.OPENAI_API_URL || process.env.OPENAI_URL;
+    const apiKey = process.env.RAG_API_KEY || process.env.OPENAI_KEY;
+    const openAiApiUrl = process.env.RAG_API_URL || process.env.OPENAI_URL;
     const model = process.env.OPENAI_MODEL || "gpt-4.1-mini";
 
     if (!apiKey) {
@@ -243,7 +243,7 @@ export async function POST(request) {
 
     if (!openAiApiUrl) {
       return NextResponse.json(
-        { error: "Missing OPENAI_API_URL (or OPENAI_URL) in environment." },
+        { error: "Missing RAG_API_URL (or OPENAI_URL) in environment." },
         { status: 500 }
       );
     }
