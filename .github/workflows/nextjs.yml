@@ -59,9 +59,9 @@ jobs:
       - name: Build with Next.js
         run: npm run build
         env:
-          RAG_API_URL: ${{ env.RAG_API_URL }}
-          RAG_API_KEY: ${{ env.RAG_API_KEY }}
- 
+          RAG_BASE_URL: ${{ secrets.RAG_BASE_URL }}
+          RAG_API_TOKEN: ${{ secrets.RAG_API_TOKEN }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

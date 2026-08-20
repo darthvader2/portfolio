@@ -63,13 +63,18 @@ export default function AISearchBlock() {
         let errorMessage = "Unable to get a response from the AI backend.";
 
         try {
-          const errorData = await response.json();
-          errorMessage = errorData?.error || errorMessage;
-        } catch {
           const rawError = await response.text();
+
           if (rawError) {
-            errorMessage = rawError;
+            try {
+              const errorData = JSON.parse(rawError);
+              errorMessage = errorData?.error || errorData?.details || errorMessage;
+            } catch {
+              errorMessage = rawError;
+            }
           }
+        } catch {
+          // Keep the default message if the response body cannot be read.
         }
 
         throw new Error(errorMessage);

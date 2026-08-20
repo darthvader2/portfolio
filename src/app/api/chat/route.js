@@ -4,6 +4,24 @@ import https from "node:https";
 
 export const runtime = "nodejs";
 
+function buildChatCompletionsUrl(baseOrEndpoint) {
+  const url = new URL(baseOrEndpoint);
+  const normalizedPath = url.pathname.replace(/\/+$/, "");
+
+  if (/\/chat\/completions$/i.test(normalizedPath)) {
+    url.pathname = normalizedPath;
+    return url.toString();
+  }
+
+  if (/\/v1$/i.test(normalizedPath)) {
+    url.pathname = `${normalizedPath}/chat/completions`;
+    return url.toString();
+  }
+
+  url.pathname = `${normalizedPath || ""}/v1/chat/completions`;
+  return url.toString();
+}
+
 function extractAnswerText(responseJson) {
   const chatContent = responseJson?.choices?.[0]?.message?.content;
   if (typeof chatContent === "string" && chatContent.trim()) {
@@ -192,6 +210,16 @@ function postJson(openAiApiUrl, apiKey, payload) {
     const url = new URL(openAiApiUrl);
     const transport = url.protocol === "https:" ? https : http;
     const requestBody = JSON.stringify(payload);
+    const headers = {
+      "Content-Type": "application/json",
+      Accept: "text/event-stream, application/json, text/plain",
+      "Accept-Encoding": "identity",
+      "Content-Length": Buffer.byteLength(requestBody)
+    };
+
+    if (apiKey) {
+      headers.Authorization = `Bearer ${apiKey}`;
+    }
 
     const request = transport.request(
       {
@@ -200,13 +228,7 @@ function postJson(openAiApiUrl, apiKey, payload) {
         port: url.port || undefined,
         path: `${url.pathname}${url.search}`,
         method: "POST",
-        headers: {
-          Authorization: `Bearer ${apiKey}`,
-          "Content-Type": "application/json",
-          Accept: "text/event-stream, application/json, text/plain",
-          "Accept-Encoding": "identity",
-          "Content-Length": Buffer.byteLength(requestBody)
-        }
+        headers
       },
       (response) => {
         resolve(response);
@@ -229,24 +251,29 @@ export async function POST(request) {
       return NextResponse.json({ error: "Prompt is required." }, { status: 400 });
     }
 
-    const apiKey = process.env.RAG_API_KEY || process.env.OPENAI_KEY;
-    const openAiApiUrl = process.env.RAG_API_URL || process.env.OPENAI_URL;
-    const model = process.env.OPENAI_MODEL || "gpt-4.1-mini";
-
-    if (!apiKey) {
-      return buildTextStreamResponse(
-        streamTextFromPlainText(
-          `Demo mode: received your question "${prompt}". Add OPENAI_API_KEY (or OPENAI_KEY) in your environment to enable live LLM answers.`
-        )
-      );
-    }
+    const apiKey =
+      process.env.RAG_API_TOKEN ||
+      process.env.RAG_API_KEY ||
+      process.env.OPENAI_API_KEY ||
+      process.env.OPENAI_KEY;
+    const openAiApiUrl =
+      process.env.RAG_API_URL ||
+      process.env.RAG_BASE_URL ||
+      process.env.OPENAI_URL ||
+      process.env.OPENAI_BASE_URL;
+    const model = process.env.OPENAI_MODEL || "gemini-3.6-flash";
 
     if (!openAiApiUrl) {
       return NextResponse.json(
-        { error: "Missing RAG_API_URL (or OPENAI_URL) in environment." },
+        {
+          error:
+            "Missing RAG_API_URL, RAG_BASE_URL, OPENAI_URL, or OPENAI_BASE_URL in environment."
+        },
         { status: 500 }
       );
     }
+
+    const chatCompletionsUrl = buildChatCompletionsUrl(openAiApiUrl);
 
     const buildRequestBody = (useChatCompletions) => {
       if (useChatCompletions) {
@@ -268,17 +295,11 @@ export async function POST(request) {
       };
     };
 
-    const useChatCompletionsFromUrl = /chat\/completions/i.test(openAiApiUrl);
-    let nodeResponse = await postJson(openAiApiUrl, apiKey, buildRequestBody(useChatCompletionsFromUrl));
+    let nodeResponse = await postJson(chatCompletionsUrl, apiKey, buildRequestBody(true));
     let errorText = "";
 
     if (nodeResponse.statusCode < 200 || nodeResponse.statusCode >= 300) {
       errorText = await readNodeResponseText(nodeResponse);
-
-      if (!useChatCompletionsFromUrl && /messages.*must be a list/i.test(errorText)) {
-        nodeResponse = await postJson(openAiApiUrl, apiKey, buildRequestBody(true));
-        errorText = "";
-      }
     }
 
     if (nodeResponse.statusCode < 200 || nodeResponse.statusCode >= 300) {
